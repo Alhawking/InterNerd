@@ -16,5 +16,7 @@ Me llamo francisco, me apodan “fran” me gustan mucho las series animadas, y 
 ### Alfredo Ledesma 
 ¡Hola! Mucho gusto, soy Alfredo, me gusta que me digan Al.Tengo 18 años. He desarrollado Front-end durante un año y este es mi primer proyecto full-stack. Me encanta tocar la batería, leer, tengo interés por la física y me encanta Harry Potter. Me encanta formar parte de este equipo con un gran potencial 😎
 ### Matias Médica
+Hola, soy Matias. Tengo 22 años. Me gusta hacer deportes, los videojuegos y las películas. Este es mi primer acercamiento a la programación y me está gustando bastante.Por suerte me tocó un buen equipo para hacer este trabajo 😁
+
 
 
