@@ -4,9 +4,11 @@ InterNerd es un e-commerce, cuyos productos están relacionados con temáticas f
 ### Nuestra razón de ser
 InterNerd nace ante la demanda del público amantes de las series, libros, películas y cómics de temáticas animadas y ficticias.
 ### Nuestra inspiración
-   -[Epicland](https://epicland.com.mx/)
-   -[Nerd Universe](https://www.nerduniverse.com.br/)
-   -[Fotocaja](https://www.fotocaja.com.ar/)
-   -[Geek Spot](https://www.geekspot.com.ar/)
-   -[Máscara de Látex](https://mascaradelatex.com/)
+El proyecto originalmente fue creado por estudiantes de desarrollo web, por lo que se necesita de alguna inspiración o modelo a seguir, tales como:
++ [Epicland](https://epicland.com.mx/)
++ [Nerd Universe](https://www.nerduniverse.com.br/)
++ [Fotocaja](https://www.fotocaja.com.ar/)
++ [Geek Spot](https://www.geekspot.com.ar/)
++ [Máscara de Látex](https://mascaradelatex.com/)
+
 
