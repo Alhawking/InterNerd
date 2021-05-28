@@ -53,10 +53,12 @@ h3 {
     margin: 2.5 0;
     font-weight: 300;
     text-align: center;
+    color: var(--naranja);
 }
 
 h1 {
     font-size: 3.8rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -142,6 +144,23 @@ h4 {
 }
 
 
+/*main*/
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedor {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.contenedor a {
+    align-self: center;
+}
+
+
 /*Footer*/
 
 
@@ -198,5 +217,16 @@ h4 {
     }
     .header-div img {
         height: 50%;
+    }
+    .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contenedor {
+        display: flex;
+        margin-right: 2rem;
+        width: 50rem;
+        height: 50rem;
     }
 }
