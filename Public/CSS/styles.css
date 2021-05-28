@@ -37,7 +37,7 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 img,
@@ -53,10 +53,12 @@ h3 {
     margin: 2.5 0;
     font-weight: 300;
     text-align: center;
+    color: var(--naranja);
 }
 
 h1 {
     font-size: 3.8rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -72,13 +74,114 @@ h4 {
 }
 
 .section {
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 120rem;
     width: 90%
 }
 
 
 /*Header*/
+
+.header {
+    background-color: var(--negro);
+}
+
+.header-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem 2rem;
+    row-gap: 2rem;
+}
+
+.header-navegacion {
+    display: none;
+}
+
+.header-div img {
+    width: 20vw;
+}
+
+.header-search {
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    height: 70%;
+    justify-content: center;
+}
+
+.header-search input {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.header-search img {
+    display: inline;
+    background-color: var(--rojo);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.sesion,
+.registro {
+    display: none;
+}
+
+.mobile-menu {
+    grid-column: 2/3;
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+.carrito {
+    cursor: pointer;
+}
+
+
+/*main*/
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedor {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.contenedor a {
+    align-self: center;
+}
+
+
+/*Body*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info p {
+    text-align: justify;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel>* {
+    margin: 2rem 0;
+}
 
 
 /*Footer*/
@@ -88,3 +191,95 @@ h4 {
 
 
 /*Botones*/
+
+.boton {
+    color: white;
+    background-color: var(--rojo);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.boton:hover {
+    color: var(--negro);
+    background-color: #ff0404;
+}
+
+
+/*Media queries*/
+
+@media(min-width: 768px) {
+    /*Header*/
+    .header-div {
+        display: flex;
+        height: 30%;
+        gap: 1rem;
+    }
+    .header-div>* {
+        margin: 0 1rem;
+    }
+    .sesion,
+    .registro {
+        display: inline;
+    }
+    .user,
+    .mobile-menu {
+        display: none;
+    }
+    .header-navegacion {
+        display: flex;
+        border-top: 1px solid #e1e1e1;
+        justify-content: space-around;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    a:hover {
+        color: var(--rojo);
+    }
+    .header-search {
+        order: -1;
+        max-height: 40%;
+        margin-right: 1rem;
+    }
+    .header-search input {
+        width: 90%;
+    }
+    .header-search img {
+        width: 20%;
+        height: 100% !important;
+    }
+    .logo {
+        order: -1;
+    }
+    .header-div img {
+        height: 50%;
+    }
+    .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contenedor {
+        display: flex;
+        margin-right: 2rem;
+        width: 50rem;
+        height: 50rem;
+    }
+    /*Body*/
+    .destacado {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: solid 1px #000;
+        padding: 1rem;
+    }
+    .info {
+        grid-column: 2/4;
+    }
+    .carrusel img {
+        max-width: 40%;
+    }
+    .carrusel .boton {
+        width: 20%;
+        text-align: center;
+    }
+}
