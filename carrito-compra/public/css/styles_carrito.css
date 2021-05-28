@@ -1,0 +1,140 @@
+body header i{
+    font-size:30px;
+    padding: 50px;
+}
+
+/*Custom variables*/
+
+:root {
+    /*Paleta de colores*/
+    --rojo: #D00000;
+    --naranja: #F48C06;
+    --negro: #03071E;
+    --blanco: #FFF;
+    /*Fuente principal*/
+    --fuente: 'Montserrat', sans-serif;
+}
+
+
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+p {
+    color: black;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente);
+    margin: 2.5 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+.section {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%
+}
+
+
+/*Header*/
+
+
+/*Footer*/
+
+
+/*Fomularios*/
+
+
+/*Botones*/
+
+#carrito {
+    height: 800px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+#titleCarrito {
+    height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#titleCarrito h2 {
+    font-size: 26px;
+    padding-top: 5px;
+}
+
+#titleCarrito button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    
+}
+
+#descCarrito {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    background-color: #ccc;
+}
+
+#descCarrito p {
+
+    margin-right: 80px;
+    font-size: 16px;
+} 
+
+#descCarrito i {
+    margin-right: 10px;
+    font-size: 20px;
+}
