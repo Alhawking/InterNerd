@@ -186,6 +186,76 @@ h4 {
 
 /*Footer*/
 
+.footer {
+    background-color: var(--negro);
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footer-main div nav {
+    display: none;
+}
+
+.sociales {
+    order: -1;
+}
+
+.sociales div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sociales div img {
+    padding: 1rem;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: -2;
+}
+
+.newsletter input {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    min-width: 25%
+}
+
+.newsletter input::placeholder {
+    text-align: center;
+}
+
+.links p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--rojo);
+    padding: 1rem;
+}
+
+.links img {
+    width: 5%;
+    cursor: pointer;
+}
+
+.copy {
+    margin: 0;
+    padding: 2rem;
+}
+
 
 /*Fomularios*/
 
@@ -258,6 +328,7 @@ h4 {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 50vh;
     }
     .contenedor {
         display: flex;
@@ -280,6 +351,34 @@ h4 {
     }
     .carrusel .boton {
         width: 20%;
+        text-align: center;
+    }
+    /*Footer*/
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .newsletter {
+        order: 0;
+    }
+    .sociales {
+        order: 0;
+    }
+    .links {
+        margin: 0;
+    }
+    .links p {
+        text-align: center;
+        border: none;
+        display: block;
+    }
+    .links img {
+        display: none;
+    }
+    .links nav {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 }
