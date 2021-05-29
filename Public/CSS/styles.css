@@ -184,6 +184,26 @@ h4 {
 }
 
 
+/*Registro*/
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos img {
+    max-width: 70%;
+}
+
+
 /*Footer*/
 
 .footer {
@@ -259,6 +279,50 @@ h4 {
 
 /*Fomularios*/
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo input {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+.btn {
+    border: none;
+    margin: 2rem 0;
+    background-color: var(--rojo);
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: 0.5s
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--rojo);
+    border: solid 1px black;
+}
+
+.cuenta {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.cuenta button {
+    width: 100%;
+}
+
 
 /*Botones*/
 
@@ -271,8 +335,10 @@ h4 {
 }
 
 .boton:hover {
-    color: var(--negro);
-    background-color: #ff0404;
+    color: var(--rojo);
+    background-color: white;
+    border: solid 1px black;
+    transform: scale(1.05, 1.05)
 }
 
 
@@ -380,5 +446,23 @@ h4 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    /*Registro*/
+    .iconos {
+        flex-direction: row;
+    }
+    .btn {
+        min-width: 40%;
+        align-self: center;
+    }
+    .form a {
+        width: 40%;
+        align-self: center;
+    }
+    .form {
+        align-items: center;
+    }
+    .form div {
+        width: 40%;
     }
 }
