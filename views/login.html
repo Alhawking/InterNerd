@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/CSS/normalize.css">
     <link rel="stylesheet" type="text/css" href="/public/CSS/styles.css">
-    <title>InterNerd-Registrarme</title>
+    <title>InterNerd-Login</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <a href="#">Coleccionable</a>
         </nav>
     </header>
-    <h2>Registrarme</h2>
+    <h2>Ingresar</h2>
     <section class="section">
         <form class="section form">
             <div class="campo">
@@ -46,21 +46,12 @@
                 <label for="apellidos">Apellidos:</label>
                 <input type="text" name="apellidos" placeholder="Apellidos" />
             </div>
-            <div class="campo">
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="Email" />
-            </div>
-            <div class="campo">
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" name="contraseña" placeholder="Contraseña" />
-            </div>
-            <div class="campo">
-                <label for="confirmacion">Confirmación de contraseña:</label>
-                <input type="password" name="confirmacion" placeholder="Confirmar" />
-            </div>
-            <button type="submit" class="btn">Resgístrame</button>
-            <a href="/login" class="cuenta">
-                <button class="btn">Ya tengo una cuenta</button>
+            <button type="submit" class="btn">Ingresar</button>
+            <a href="/signup" class="cuenta">
+                <button class="btn">¿Primera vez? Regístrate</button>
+            </a>
+            <a href="#" class="cuenta">
+                <button class="btn">Recuperar contraseña</button>
             </a>
         </form>
     </section>
