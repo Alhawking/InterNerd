@@ -78,8 +78,12 @@ h4 {
     max-width: 120rem;
     width: 90%
 }
-
-
+.stock{
+    color:green
+}
+.precio{
+    color:red
+}
 /*Header*/
 
 .header {
@@ -465,4 +469,5 @@ h4 {
     .form div {
         width: 40%;
     }
+    
 }
