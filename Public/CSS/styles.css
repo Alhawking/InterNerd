@@ -184,10 +184,144 @@ h4 {
 }
 
 
+/*Registro*/
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos img {
+    max-width: 70%;
+}
+
+
 /*Footer*/
+
+.footer {
+    background-color: var(--negro);
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footer-main div nav {
+    display: none;
+}
+
+.sociales {
+    order: -1;
+}
+
+.sociales div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sociales div img {
+    padding: 1rem;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: -2;
+}
+
+.newsletter input {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    min-width: 25%
+}
+
+.newsletter input::placeholder {
+    text-align: center;
+}
+
+.links p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--rojo);
+    padding: 1rem;
+}
+
+.links img {
+    width: 5%;
+    cursor: pointer;
+}
+
+.copy {
+    margin: 0;
+    padding: 2rem;
+}
 
 
 /*Fomularios*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo input {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+.btn {
+    border: none;
+    margin: 2rem 0;
+    background-color: var(--rojo);
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: 0.5s
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--rojo);
+    border: solid 1px black;
+}
+
+.cuenta {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.cuenta button {
+    width: 100%;
+}
 
 
 /*Botones*/
@@ -201,8 +335,10 @@ h4 {
 }
 
 .boton:hover {
-    color: var(--negro);
-    background-color: #ff0404;
+    color: var(--rojo);
+    background-color: white;
+    border: solid 1px black;
+    transform: scale(1.05, 1.05)
 }
 
 
@@ -258,6 +394,7 @@ h4 {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 50vh;
     }
     .contenedor {
         display: flex;
@@ -281,5 +418,51 @@ h4 {
     .carrusel .boton {
         width: 20%;
         text-align: center;
+    }
+    /*Footer*/
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .newsletter {
+        order: 0;
+    }
+    .sociales {
+        order: 0;
+    }
+    .links {
+        margin: 0;
+    }
+    .links p {
+        text-align: center;
+        border: none;
+        display: block;
+    }
+    .links img {
+        display: none;
+    }
+    .links nav {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /*Registro*/
+    .iconos {
+        flex-direction: row;
+    }
+    .btn {
+        min-width: 40%;
+        align-self: center;
+    }
+    .form a {
+        width: 40%;
+        align-self: center;
+    }
+    .form {
+        align-items: center;
+    }
+    .form div {
+        width: 40%;
     }
 }
