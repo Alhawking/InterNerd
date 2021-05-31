@@ -157,10 +157,10 @@ body button:hover {
     
 }
 
-#producto{
-    
+.producto{
+   
     padding: 1px;
-    border-bottom: 1px solid #dadadd ;
+    border-bottom: 1px solid #dddada ;
 
 
 }
@@ -228,8 +228,9 @@ body button:hover {
 .footerWidth{
     
     height: 120px;
-    margin-top: 450px;
-    background-color: rgb(248, 248, 245);
+    margin-top: 460px;
+    margin-bottom: 15px;
+    background-color: rgb(248, 248, 245);;
     border-top: 1px solid #dadadd ;
     
 
@@ -276,8 +277,13 @@ body button:hover {
 .footerWidth h5{
     cursor: pointer;
     text-align: center;
+    background-color:#03071E;
+    padding-bottom: 2px;
+    color:#FFF;
+    
     
 }
+
 
 .footerWidth h4{
     margin-left: 40px;
@@ -288,6 +294,7 @@ body button:hover {
     font-size: 16px;
     margin-left: 335px;
     margin-top: -50px;
+    
    
 
 }
