@@ -3,6 +3,7 @@
 InterNerd es un e-commerce, cuyos productos están relacionados con temáticas ficticias y animadas como por ejemplo Marvel, Dragon Ball Z, Los Simpson, DC comics, Harry Potter el Señor de los Anillos etcétera.
 ### Nuestra razón de ser 
 InterNerd nace ante la demanda del público amantes de las series, libros, películas y cómics de temáticas animadas y ficticias.
+Vendemos productos como libros, cómics, artículos de colección o de escritorio y mucho más.
 ### Nuestra inspiración
 El proyecto originalmente fue creado por estudiantes de desarrollo web, por lo que se necesita de alguna inspiración o modelo a seguir, tales como:
 + [Epicland](https://epicland.com.mx/)
