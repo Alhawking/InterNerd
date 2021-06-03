@@ -73,10 +73,14 @@ h4 {
     font-size: 2.6rem;
 }
 
+button {
+    border: none;
+}
+
 .section {
     margin: 2rem auto;
     max-width: 120rem;
-    width: 90%
+    width: 90%;
 }
 
 
@@ -342,6 +346,35 @@ h4 {
 }
 
 
+/*Detalle-producto*/
+
+.stock {
+    color: green
+}
+
+.precio {
+    color: red
+}
+
+.title-prodcto {
+    font-weight: 700;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info span {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
 /*Media queries*/
 
 @media(min-width: 768px) {
@@ -464,5 +497,10 @@ h4 {
     }
     .form div {
         width: 40%;
+    }
+    /*Detalle de producto*/
+    .producto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
