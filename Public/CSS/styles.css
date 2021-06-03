@@ -120,6 +120,7 @@ button {
     border: none;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    min-width: 90%;
 }
 
 .header-search img {
@@ -502,5 +503,11 @@ button {
     .producto {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:300px) {
+    .header-search input {
+        min-width: unset;
     }
 }
