@@ -1,10 +1,7 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const mainRoute = require('./src/routes/main');
 app.use('/public', express.static(__dirname + '/public'));
-app.use('/views', express.static(__dirname + '/views'));
+app.use('', mainRoute);
 app.listen(3000);
-app.get('/', (req, res) => res.sendFile(path.resolve(__dirname, 'views/index.html')));
-app.get('/signup', (req, res) => res.sendFile(path.resolve(__dirname, 'views/signup.html')));
-app.get('/login', (req, res) => res.sendFile(path.resolve(__dirname, 'views/login.html')));
-app.get("/detalle-producto",(req,res)=> res.sendFile(path.resolve(__dirname,"views/detalle-producto.html")));
+app.set('view engine', 'ejs');
