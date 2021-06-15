@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/public/CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/public/CSS/styles.css">
+    <title>InterNerd-Registrarme</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-div">
+            <img src="/public/img/logo-temporal.svg" alt="Logo" class="logo">
+            <a href="/login">
+                <img src="/public/img/User.svg" alt="ícono de usuario" class="user" />
+            </a>
+            <a href="/login" class="sesion">Iniciar sesión</a>
+            <a href="/signup" class="registro">Registrarme</a>
+            <img src="/public/img/Carrito.svg" alt="Carrito" class="carrito">
+            <div class="header-search">
+                <input type="text" name="search" placeholder="Explorar..." />
+                <img src="/public/img/Buscar.svg" alt="ícono buscar">
+            </div>
+            <img src="/public/img/mobile-menu.svg" class="mobile-menu" alt="Menu mobile">
+        </div>
+        <nav class="header-navegacion">
+            <a href="/">Inicio</a>
+            <a href="#">Libros</a>
+            <a href="#">Cómics</a>
+            <a href="#">De escritorio</a>
+            <a href="#">Ropa</a>
+            <a href="#">Coleccionable</a>
+        </nav>
+    </header>
+    <h2>Registrarme</h2>
+    <section class="section">
+        <form class="section form">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre" />
+            </div>
+            <div class="campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" placeholder="Apellidos" />
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="campo">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" placeholder="Contraseña" />
+            </div>
+            <div class="campo">
+                <label for="confirmacion">Confirmación de contraseña:</label>
+                <input type="password" name="confirmacion" placeholder="Confirmar" />
+            </div>
+            <button type="submit" class="btn">Resgístrame</button>
+            <a href="/login" class="cuenta">
+                <button class="btn">Ya tengo una cuenta</button>
+            </a>
+        </form>
+    </section>
+    <section class="section iconos">
+        <div>
+            <img src="/public/img/Seguridad.svg" alt="ícono de seguridad">
+            <p>Siéntete seguro de hacer tus compras</p>
+        </div>
+        <div>
+            <img src="/public/img/Calidad.svg" alt="ícono de seguridad">
+            <p>Productos de calidad siempreson recibidos</p>
+        </div>
+        <div>
+            <img src="/public/img/Camion.svg" alt="ícono de seguridad">
+            <p>Llegan hasta la puerta de tu casa</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="links section">
+                <p>Legales <img src="/public/img/suma.svg" alt="ícono de suma"></p>
+                <nav>
+                    <a href="#">Políticas de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Políticas e servicio</a>
+                </nav>
+            </div>
+            <div class="links section">
+                <p>Compras <img src="/public/img/suma.svg" alt="ícono de suma"></p>
+                <nav>
+                    <a href="#">Formas de pago</a>
+                    <a href="#">¿Cómo comprar?</a>
+                    <a href="#">Rastrear pedido</a>
+                </nav>
+            </div>
+            <div class="sociales">
+                <p>Síguenos</p>
+                <div>
+                    <a href="#"><img src="/public/img/facebook-logo.svg" alt="Logo facebook"></a>
+                    <a href="#"><img src="/public/img/instagram-logo.svg" alt="Logo instagram"></a>
+                    <a href="#"><img src="/public/img/twitter-logo.svg" alt="Logo twitter"></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <p>Suscríbete a nuestro newsletter</p>
+                <input type="text" name="newsletter" placeholder="Déjanos tu email" />
+            </div>
+        </div>
+        <p class="copy">InterNerd. Todos los derechos reservados &copy;</p>
+    </footer>
+
+    <script src="/public/js/app.js">
+    </script>
+</body>
+
+</html>
