@@ -344,6 +344,13 @@ button {
     border: 1px solid black;
 }
 
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn {
     border: none;
     margin: 2rem 0;
@@ -416,6 +423,18 @@ button {
 .info span {
     font-size: 1.7rem;
     text-align: center;
+}
+
+
+/*Formulario productos*/
+
+.contenedor-btn button {
+    width: 70%;
+}
+
+select {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -549,6 +568,18 @@ button {
     .producto {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    /*Formulario productos*/
+    .contenedor-btn {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenedor-btn button {
+        width: 50%;
+    }
+    .contenedor-btn button[type="submit"] {
+        order: 1;
+        margin-left: 1rem;
     }
 }
 
