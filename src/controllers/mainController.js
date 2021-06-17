@@ -14,6 +14,9 @@ const main = {
         res.render('signup', {
             pageTitle: 'Signup'
         });
+    },
+    pageNav: (req, res) => {
+        res.render('pageNav', { pageTitle: req.params.nav })
     }
 }
 

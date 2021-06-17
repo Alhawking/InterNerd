@@ -4,5 +4,6 @@ const mainController = require('../controllers/mainController');
 router.get('/', mainController.index);
 router.get('/login', mainController.login);
 router.get('/signup', mainController.register);
+router.get('/:nav', mainController.pageNav);
 
 module.exports = router;
