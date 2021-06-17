@@ -116,21 +116,14 @@ button {
     grid-column: 1/4;
     width: 100%;
     display: flex;
-    height: 70%;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .header-search form {
     margin: 0;
-    width: 90%;
-}
-
-.header-search label {
-    flex-wrap: wrap;
+    width: 100%;
     display: flex;
-    height: 80%;
     justify-content: center;
 }
 
@@ -143,19 +136,15 @@ button {
 }
 
 .header-search form button {
-    display: inline;
     background-color: var(--rojo);
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     padding: 0;
-    width: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
-}
-
-.header-search form button img {
-    width: 60%;
+    width: 20%;
 }
 
 .header-div a {
@@ -178,7 +167,6 @@ button {
 .carrito {
     width: auto;
     cursor: pointer;
-    max-height: 90%;
 }
 
 
@@ -435,6 +423,9 @@ button {
 
 @media(min-width: 768px) {
     /*Header*/
+    .carrito {
+        max-width: 5%;
+    }
     .header-div {
         display: flex;
         height: 35%;
@@ -485,13 +476,11 @@ button {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 50vh;
     }
     .contenedor {
         display: flex;
         margin-right: 2rem;
         width: 50rem;
-        height: 50rem;
     }
     /*Body*/
     .destacado {
