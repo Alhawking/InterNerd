@@ -16,7 +16,18 @@ const main = {
         });
     },
     pageNav: (req, res) => {
-        res.render('pageNav', { pageTitle: req.params.nav })
+        const optionsInNav = [
+            'libros',
+            'comics',
+            'escritorio',
+            'ropa',
+            'coleccionable'
+        ]
+        if (optionsInNav.some(option => option === req.params.nav)) {
+            res.render('pageNav', { pageTitle: req.params.nav })
+        } else {
+            res.send('404');
+        }
     }
 }
 
