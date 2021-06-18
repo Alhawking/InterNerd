@@ -27,6 +27,12 @@ const productsController = {
     },
     edit: (req, res) => {
         res.render('products/edit', { pageTitle: 'Editar' });
+    },
+    category: (req, res) => {
+        res.render('products/category/category', { pageTitle: req.params.categoryName.replace(/^\w/, (c) => c.toUpperCase()) })
+    },
+    wires: (req, res) => {
+        res.send('En categoría');
     }
 }
 

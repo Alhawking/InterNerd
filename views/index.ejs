@@ -8,21 +8,11 @@
             <h1>¡Bienvenido a InterNerd!</h1>
             <h2>¡Explora la red que quieras!</h2>
             <main class="section main">
-                <div class="contenedor">
-                    <a href="#"><img src="/public/img/marvel.svg" alt="Logo de Marvel"></a>
-                </div>
-                <div class="contenedor">
-                    <a href="#"><img src="/public/img/DC_Comics_logo.svg" alt="Logo de DC"></a>
-                </div>
-                <div class="contenedor">
-                    <a href="#"><img src="/public/img/hp.svg" alt="Logo de Harry Potter"></a>
-                </div>
-                <div class="contenedor">
-                    <a href="#"><img src="/public/img/star-wars.svg" alt="Logo de Star wars"></a>
-                </div>
-                <div class="contenedor">
-                    <a href="#"><img src="/public/img/Simpsons.svg" alt="Logo de Los simpsons"></a>
-                </div>
+                <%for(red of redes){%>
+                    <div class="contenedor">
+                        <a href="/products/wires/<%= red.red%>"><img src="<%= red.img%>" alt="Logo de <%= red.red%>"></a>
+                    </div>
+                    <%}%>
             </main>
             <h2>Producto destacado</h2>
             <section class="section destacado">
