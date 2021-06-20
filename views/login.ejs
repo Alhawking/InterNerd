@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head')%>
+
+    <body>
+        <%- include('./partials/header')%>
+            <h2>Ingresar</h2>
+            <section class="section">
+                <form class="section form">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Nombre" />
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" placeholder="Apellidos" />
+                    </div>
+                    <button type="submit" class="btn">Ingresar</button>
+                    <a href="/signup" class="cuenta">
+                        <button class="btn">¿Primera vez? Regístrate</button>
+                    </a>
+                    <a href="#" class="cuenta">
+                        <button class="btn">Recuperar contraseña</button>
+                    </a>
+                </form>
+            </section>
+            <section class="section iconos">
+                <div>
+                    <img src="/public/img/Seguridad.svg" alt="ícono de seguridad">
+                    <p>Siéntete seguro de hacer tus compras</p>
+                </div>
+                <div>
+                    <img src="/public/img/Calidad.svg" alt="ícono de seguridad">
+                    <p>Productos de calidad siempreson recibidos</p>
+                </div>
+                <div>
+                    <img src="/public/img/Camion.svg" alt="ícono de seguridad">
+                    <p>Llegan hasta la puerta de tu casa</p>
+                </div>
+            </section>
+            <%- include('./partials/footer')%>
+                <script src="/public/js/app.js">
+                </script>
+    </body>
+
+</html>
