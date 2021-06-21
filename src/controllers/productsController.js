@@ -3,14 +3,16 @@ const redes = [
         'DC',
         'Harry Potter',
         'Star Wars',
-        'Simpsons'
+        'Simpsons',
+        'Dragon Ball Z'
     ],
     categorias = [
         'Libros',
         'Cómics',
         'Escritorio',
         'Ropa',
-        'Coleccionable'
+        'Coleccionable',
+        'Otros'
     ]
 
 function Product(name, description, stock, price, especifications, image, red, category) {
@@ -66,7 +68,15 @@ const productsController = {
         });
     },
     category: (req, res) => {
-        res.render('products/category/category', { pageTitle: req.params.categoryName.replace(/^\w/, (c) => c.toUpperCase()) })
+        category = req.params.categoryName.replace(/^\w/, (c) => c.toUpperCase())
+        res.render('products/category/category', {
+            pageTitle: category,
+            products: products.filter((product, i) => {
+                product.id = i;
+                return (product.category === category) && product.stock;
+            }),
+            category: req.params.categoryName
+        })
     },
     wires: (req, res) => {
         res.render('products/category/category', {
