@@ -4,7 +4,53 @@
 
     <body>
         <%- include('../partials/header')%>
-
+            <section class="section">
+                <form>
+                    <div class="campo">
+                        <label for="nombreProducto">Nombre de producto</label>
+                        <input type="text" name="nombreProducto" value="<%= product.name%>">
+                    </div>
+                    <div class="campo">
+                        <label for="descripcion">Descripción</label>
+                        <textarea><%= product.description%></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen" accept=".png, .webp, .jpg" value="<%= product.image%>">
+                    </div>
+                    <img src="<%= product.image%>" alt="Imagen producto a editar" class="img-edit">
+                    <div class="campo">
+                        <label for="tipoRed">Red</label>
+                        <select name="tipoRed">
+                        <option disabled>--Seleccionar--</option>
+                        <option value="<%= product.red%>" selected><%= product.red%></option>
+                        <% for(red of redes){%> 
+                            <option value="<%= red%>"><%=red%></option>
+                            <% } %> 
+                            <option value="Otra">Otra</option>
+                    </select>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria">
+                        <option disabled>--Seleccionar--</option>
+                        <option value="<%= product.category%>"><%= product.category%></option>
+                        <% for(categoria of categorias){%> 
+                            <option value="<%= categoria%>"><%=categoria%></option>
+                            <% } %> 
+                            <option value="Otra">Otra</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" min="0" value="<%= product.price%>">
+                    </div>
+                    <div class="contenedor-btn ">
+                        <button type="submit" class="btn">Finalizar edición</button>
+                        <button type="reset" class="btn">Descartar cambios</button>
+                    </div>
+                </form>
+            </section>
             <%- include('../partials/footer')%>
     </body>
 
