@@ -1,8 +1,18 @@
 const path = require('path');
 const users = {
-    users: (req, res) => {
-        res.render('users', {
-            pageTitle: 'users'
+    registro: (req, res) => {
+        res.render('registro', {
+            pageTitle: 'Registro'
+        });
+    },
+    login: (req, res) => {
+        res.render('login', {
+            pageTitle: 'Login'
+        });
+    },
+    perfil: (req, res) => {
+        res.render('perfil', {
+            pageTitle: 'Perfil'
         });
     }
     

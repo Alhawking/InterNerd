@@ -14,7 +14,8 @@ const main = {
         res.render('signup', {
             pageTitle: 'Signup'
         });
-    }
+    }  
+    
 }
 
 module.exports = main;
