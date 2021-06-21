@@ -432,9 +432,22 @@ button {
     width: 70%;
 }
 
+textarea {
+    padding: 2rem;
+    resize: none;
+    border-radius: 0.5rem;
+}
+
 select {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
+}
+
+
+/*Imagen a editar*/
+
+.img-edit {
+    max-width: 40%;
 }
 
 
