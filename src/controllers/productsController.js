@@ -69,7 +69,9 @@ const productsController = {
         res.render('products/category/category', { pageTitle: req.params.categoryName.replace(/^\w/, (c) => c.toUpperCase()) })
     },
     wires: (req, res) => {
-        res.send('En categoría');
+        res.render('products/category/category', {
+            pageTitle: req.params.wireName.toUpperCase()
+        });
     }
 }
 
