@@ -425,6 +425,20 @@ button {
     text-align: center;
 }
 
+.especification {
+    font-size: 2.3rem;
+    color: var(--naranja);
+}
+
+.especification-value {
+    display: inline;
+}
+
+.especifications {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 
 /*Formulario productos*/
 
@@ -593,6 +607,10 @@ select {
     .contenedor-btn button[type="submit"] {
         order: 1;
         margin-left: 1rem;
+    }
+    .especifications {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
