@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head')%>
+<%- include('../partials/head')%>
 
     <body>
-        <%- include('./partials/header')%>
+        <%- include('../partials/header')%>
 
             <h2>Registrarme</h2>
             <section class="section">
@@ -29,7 +29,7 @@
                         <input type="password" name="confirmacion" placeholder="Confirmar" />
                     </div>
                     <button type="submit" class="btn">Resgístrame</button>
-                    <a href="/login" class="cuenta">
+                    <a href="/users/login" class="cuenta">
                         <button class="btn">Ya tengo una cuenta</button>
                     </a>
                 </form>
@@ -48,7 +48,7 @@
                     <p>Llegan hasta la puerta de tu casa</p>
                 </div>
             </section>
-            <%- include('./partials/footer')%>
+            <%- include('../partials/footer')%>
 
                 <script src="/public/js/app.js">
                 </script>
