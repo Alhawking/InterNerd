@@ -25,23 +25,23 @@ function Product(name, description, stock, price, especifications, image, red, c
 }
 
 const products = [
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
     new Product('Funko de Homero Simpson', 'Funko de Homero Simpson en su sillón en su clásica posición frente al televisor', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/Producto.jpg', 'Simpsons', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '', 'hp', 'Coleccionable')
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable')
 ]
 const productsController = {
     detail: (req, res) => {
