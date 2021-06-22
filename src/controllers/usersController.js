@@ -8,6 +8,11 @@ const usersController = {
         res.render('users/signup', {
             pageTitle: 'Registrarse'
         })
+    },
+    profile: (req, res) => {
+        res.reder('users/profile', {
+            pageTitle: 'Perfil'
+        })
     }
 }
 
