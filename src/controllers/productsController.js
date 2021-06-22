@@ -87,6 +87,15 @@ const productsController = {
             }),
             category: req.params.categoryName
         })
+    },
+    allProducts: (req, res) => {
+        res.render('products/list', {
+            pageTitle: 'Todos los productos',
+            products: products.map((product, i) => {
+                product.id = i;
+                return product
+            })
+        })
     }
 }
 
