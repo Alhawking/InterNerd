@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head')%>
+
+    <body>
+        <%- include('./partials/header')%>
+            <h1>¡Bienvenido a InterNerd!</h1>
+            <h2>¡Explora la red que quieras!</h2>
+            <main class="section main">
+                <%for(red of redes){%>
+                    <div class="contenedor">
+                        <a href="/products/wires/<%= red.red%>"><img src="<%= red.img%>" alt="Logo de <%= red.red%>"></a>
+                    </div>
+                    <%}%>
+            </main>
+            <h2>Producto destacado</h2>
+            <section class="section destacado">
+                <img src="/public/img/Producto.jpg" alt="Producto destacado">
+                <div class="info">
+                    <h3>Funko Sofá de Homero</h3>
+                    <p>Nisi duis proident veniam sunt dolore fugiat tempor magna consectetur. Velit laboris aute irure sunt laboris fugiat reprehenderit quis ut minim. Excepteur labore excepteur adipisicing excepteur amet commodo minim. Ad et dolore Lorem
+                        incididunt adipisicing eiusmod et nisi ex culpa voluptate. Sunt fugiat cupidatat minim in incididunt aliquip aute proident nostrud.</p>
+                    <a href="/products/detail/1" class="boton">Ver producto</a>
+                </div>
+            </section>
+            <h2>¿No te gusta? Echa un vistazo a otros produtos de tu interés</h2>
+            <section class="section carrusel">
+                <img src="/public/img/Producto1.jpg" alt="Imagen de producto 1">
+                <a href="#" class="boton">Ver más</a>
+            </section>
+            <%- include('./partials/footer')%>
+
+                <script src="/public/js/app.js">
+                </script>
+    </body>
+
+</html>

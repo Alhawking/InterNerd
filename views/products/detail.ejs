@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+            <section class="section producto">
+                <div>
+                    <img src="<%= product.image%>" class="img" />
+                </div>
+                <div>
+                    <div class="info">
+                        <h3 class="title-prodcto"><strong><%= product.name%></h3></strong>
+                            <p class="precio">$
+                                <%= product.price%>
+                            </p>
+                            <p class="stock">
+                                <%= product.stock?'Disponible':'Agotado'%>
+                            </p>
+                            <a href="carrito"></a><button class="btn">Añadir al carrito</button></a>
+                            <span>Con esta compra sumas 1000 puntos</span>
+                            <br>
+                    </div>
+                    <div>
+                        <h1>Descripción</h1>
+                        <p>
+                            <%= product.description%>
+                        </p>
+                    </div>
+                    <%if(Object.keys(product.especifications).length>0){%>
+                        <h2>Especificaciones</h2>
+                        <div class="especifications">
+                            <%for(item in product.especifications){%>
+                                <div class="div-especification">
+                                    <label class="especification"><%= item.replace(/^\w/, (c) => c.toUpperCase())%>:</label>
+                                    <p class="especification-value">
+                                        <%if(item=='peso'){
+                                        var value = product.especifications[item]+' kg';
+                                    }else if(item=='Altura'){
+                                        var value = product.especifications[item]+' cm';
+                                    }else{
+                                        var value = product.especifications[item];
+                                    }%>
+                                            <%= value%>
+                                    </p>
+                                </div>
+                                <% } %>
+                        </div>
+                        <%}%>
+                </div>
+            </section>
+
+            <%- include('../partials/footer')%>
+                <script src="/public/js/app.js">
+                </script>
+    </body>
+
+</html>
