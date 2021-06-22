@@ -3,8 +3,7 @@ const redes = [
         'DC',
         'Harry Potter',
         'Star Wars',
-        'Simpsons',
-        'Dragon Ball Z'
+        'Simpsons'
     ],
     categorias = [
         'Libros',
@@ -29,7 +28,7 @@ function Product(name, description, stock, price, especifications, image, red, c
 const products = [
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
     new Product('Funko de Homero Simpson', 'Funko de Homero Simpson en su sillón en su clásica posición frente al televisor', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/Producto.jpg', 'Simpsons', 'Coleccionable'),
-    new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
+    new Product('Playera con logo de Marvel', 'Playera con estampado del logo de Marvel color negro.', true, 300.00, { color: 'Negro', Materiales: 'Tela' }, '/public/img/DC-playera.png', 'marvel', 'Ropa'),
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
@@ -79,9 +78,15 @@ const productsController = {
         })
     },
     wires: (req, res) => {
-        res.render('products/category/category', {
-            pageTitle: req.params.wireName.toUpperCase()
-        });
+        wire = req.params.wireName;
+        res.render('products/wires/wire', {
+            pageTitle: wire,
+            products: products.filter((product, i) => {
+                product.id = i;
+                return (product.red === wire) && product.stock;
+            }),
+            category: req.params.categoryName
+        })
     }
 }
 
