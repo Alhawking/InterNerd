@@ -10,8 +10,9 @@ const usersController = {
         })
     },
     profile: (req, res) => {
-        res.reder('users/profile', {
-            pageTitle: 'Perfil'
+        res.render('users/profile', {
+            pageTitle: 'Perfil',
+            id: req.params.id
         })
     }
 }
