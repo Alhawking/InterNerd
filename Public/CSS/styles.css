@@ -91,6 +91,8 @@ button {
 }
 
 .header-div {
+    margin-top: 0;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -100,6 +102,8 @@ button {
 }
 
 .header-navegacion {
+    margin-top: 0;
+    margin-bottom: 0;
     display: none;
 }
 
@@ -108,27 +112,43 @@ button {
 }
 
 .header-search {
+    margin: 0;
     grid-column: 1/4;
     width: 100%;
     display: flex;
-    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search form {
+    margin: 0;
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
-.header-search input {
-    padding: 0.5rem 2rem;
+.header-search form input {
     border: none;
+    padding: 0.5rem 2rem;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-    min-width: 90%;
+    width: 70%;
 }
 
-.header-search img {
-    display: inline;
+.header-search form button {
     background-color: var(--rojo);
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    padding: 0.3rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 20%;
+}
+
+.header-div a {
+    margin: 0 1rem;
 }
 
 .sesion,
@@ -145,6 +165,7 @@ button {
 }
 
 .carrito {
+    width: auto;
     cursor: pointer;
 }
 
@@ -251,11 +272,33 @@ button {
     order: -2;
 }
 
-.newsletter input {
+.newsletter-form button {
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width: 65%;
+    border-radius: 0.3rem;
+    background-color: var(--naranja);
+    color: white;
+    transition: all 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: white;
+    color: var(--naranja);
+    transform: scale(1.05, 1.05)
+}
+
+.newsletter form input {
+    margin: 1rem 0;
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.5rem;
     min-width: 25%
+}
+
+.newsletter p {
+    order: -2;
 }
 
 .newsletter input::placeholder {
@@ -299,6 +342,13 @@ button {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: 1px solid black;
+}
+
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -375,18 +425,83 @@ button {
     text-align: center;
 }
 
+.especification {
+    font-size: 2.3rem;
+    color: var(--naranja);
+}
+
+.especification-value {
+    display: inline;
+}
+
+.especifications {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+/*Formulario productos*/
+
+.contenedor-btn button {
+    width: 70%;
+}
+
+textarea {
+    padding: 2rem;
+    resize: none;
+    border-radius: 0.5rem;
+}
+
+select {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+
+/*Imagen a editar*/
+
+.img-edit {
+    max-width: 40%;
+}
+
+
+/*Listado Productos*/
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.product-card {
+    padding: 1rem;
+    border: solid 2px black;
+    transition: all 0.5s;
+}
+
+
+/* .product-card:hover {
+    transform: scale(1.05, 1.05)
+} */
+
+.product-card p {
+    margin: 0;
+    text-align: center;
+}
+
 
 /*Media queries*/
 
 @media(min-width: 768px) {
     /*Header*/
+    .carrito {
+        max-width: 5%;
+    }
     .header-div {
         display: flex;
-        height: 30%;
+        height: 35%;
         gap: 1rem;
-    }
-    .header-div>* {
-        margin: 0 1rem;
     }
     .sesion,
     .registro {
@@ -409,7 +524,6 @@ button {
     .header-search {
         order: -1;
         max-height: 40%;
-        margin-right: 1rem;
     }
     .header-search input {
         width: 90%;
@@ -419,7 +533,13 @@ button {
         height: 100% !important;
     }
     .logo {
+        margin: 0;
         order: -1;
+        max-width: 13%;
+        display: flex;
+    }
+    .logo img {
+        justify-content: center;
     }
     .header-div img {
         height: 50%;
@@ -428,13 +548,11 @@ button {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 50vh;
     }
     .contenedor {
         display: flex;
         margin-right: 2rem;
         width: 50rem;
-        height: 50rem;
     }
     /*Body*/
     .destacado {
@@ -504,10 +622,40 @@ button {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    /*Formulario productos*/
+    .contenedor-btn {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenedor-btn button {
+        width: 50%;
+    }
+    .contenedor-btn button[type="submit"] {
+        order: 1;
+        margin-left: 1rem;
+    }
+    .especifications {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*Listado de productos*/
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .p-hidden {
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+    .product-card:hover .p-hidden {
+        visibility: visible;
+        height: 10rem;
+    }
 }
 
 @media(min-width:300px) {
-    .header-search input {
+    .header-search form {
         min-width: unset;
     }
 }

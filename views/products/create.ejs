@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+            <h2>Crear producto</h2>
+            <section class="section">
+                <form>
+                    <div class="campo">
+                        <label for="nombreProducto">Nombre de producto</label>
+                        <input type="text" name="nombreProducto">
+                    </div>
+                    <div class="campo">
+                        <label for="descripcion">Descripción</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen" accept=".png, .webp, .jpg ">
+                    </div>
+                    <div class="campo">
+                        <label for="tipoRed">Red</label>
+                        <select name="tipoRed">
+                            <option disabled selected>--Seleccionar--</option>
+                            <% for(red of redes){%> 
+                                <option value="<%= red%>"><%=red%></option>
+                                <% } %> 
+                                <option value="Otra">Otra</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria">
+                            <option disabled selected>--Seleccionar--</option>
+                            <% for(categoria of categorias){%> 
+                                <option value="<%= categoria%>"><%=categoria%></option>
+                                <% } %> 
+                                <option value="Otra">Otra</option>
+                            </select>
+                    </div>
+                    <div class="campo">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" min="0">
+                    </div>
+                    <div class="contenedor-btn ">
+                        <button type="submit" class="btn">Crear producto</button>
+                        <button type="reset" class="btn">Borrar todo</button>
+                    </div>
+                </form>
+            </section>
+            <%- include('../partials/footer')%>
+    </body>
+
+</html>
