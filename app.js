@@ -9,3 +9,4 @@ app.use('/users', usersRoutes);
 app.use('/products', productsRoutes);
 app.listen(3000);
 app.set('view engine', 'ejs');
+app.set('views','./src/views');
