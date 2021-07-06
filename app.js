@@ -9,3 +9,13 @@ app.use('/users', usersRoutes);
 app.use('/products', productsRoutes);
 app.listen(3000);
 app.set('view engine', 'ejs');
+
+
+//trabajando con POST//
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+
+//configurando para poder usar PUT y delete//
+
+const methodOverride=require('method-override');
+app.use(methodOverride('_method'));
