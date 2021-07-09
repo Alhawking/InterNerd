@@ -652,6 +652,10 @@ select {
         visibility: visible;
         height: 10rem;
     }
+    .validationProfile{
+        font-size: 12px;
+        color: rgb(134, 8, 48);
+    }
 }
 
 @media(min-width:300px) {
