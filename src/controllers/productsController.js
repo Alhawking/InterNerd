@@ -96,6 +96,9 @@ const productsController = {
                 return product
             })
         })
+    },
+    createPost:(req,res)=>{
+        res.redirect('/')
     }
 }
 
