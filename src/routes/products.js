@@ -7,5 +7,7 @@ router.get('/edit/:id', productsController.edit);
 router.get('/category/:categoryName', productsController.category);
 router.get('/wires/:wireName', productsController.wires);
 router.get('/list', productsController.allProducts);
+//---POST--//
+router.post('/create',productsController.createPost)
 
 module.exports = router;
