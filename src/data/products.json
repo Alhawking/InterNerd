@@ -52,5 +52,14 @@
   "categoria": "Coleccionable",
   "precio": "1500",
   "image": "1625936820345.jpg"
+ },
+ {
+  "id": 5,
+  "nombreProducto": "los simpsons",
+  "descripcion": "remera blanca de los simpsons",
+  "tipoRed": "Simpsons",
+  "categoria": "Ropa",
+  "precio": "1000",
+  "image": "1625940356584.jpg"
  }
 ]

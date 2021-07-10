@@ -107,6 +107,7 @@ const productsController = {
             products: products.map((product, i) => {
                 product.id = i;
                 return product
+                //logica aca
             })
         })
     },
@@ -117,7 +118,7 @@ const productsController = {
         let nuevoObjeto=Object.assign({id:idNuevo},producto,{image:nombreImagen})
         productsDB.push(nuevoObjeto)
 		fs.writeFileSync(productsFilePath,JSON.stringify(productsDB,null,' '));
-		res.redirect('/products/create')
+		res.redirect('/products/list')
         
     }
 }

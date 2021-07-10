@@ -24,6 +24,7 @@ router.get('/wires/:wireName', productsController.wires);
 router.get('/list', productsController.allProducts);
 //---POST--//
 router.post('/create',uploadFile.single('imagen'),productsController.createPost)  //uploadFile.single('en el formulario me fijo el name q use')
+//router.delete('/'
 
 module.exports = router;
 
