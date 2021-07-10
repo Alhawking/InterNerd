@@ -1,3 +1,14 @@
+const { dir } = require('console');
+const fs = require("fs");
+const path = require("path");
+
+
+
+const productsFilePath = path.join(__dirname, "../data/products.json");
+const productsDB = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 const redes = [
         'Marvel',
         'DC',
@@ -25,6 +36,7 @@ function Product(name, description, stock, price, especifications, image, red, c
     this.red = red;
 }
 
+
 const products = [
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
     new Product('Funko de Homero Simpson', 'Funko de Homero Simpson en su sillón en su clásica posición frente al televisor', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/Producto.jpg', 'Simpsons', 'Coleccionable'),
@@ -44,6 +56,7 @@ const products = [
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable'),
     new Product('Funko Harry Potter con uniforme', 'Funko de Harry Potter con uniforme de Hogwarts', true, 300.00, { Altura: 10.16, Materiales: 'PVC', peso: 0.13 }, '/public/img/HP-product.png', 'hp', 'Coleccionable')
 ]
+
 const productsController = {
     detail: (req, res) => {
         res.render('products/detail', {
@@ -96,6 +109,16 @@ const productsController = {
                 return product
             })
         })
+    },
+    createPost:(req,res)=>{
+        let nombreImagen=req.file.filename
+        let producto=req.body
+        let idNuevo=productsDB[productsDB.length-1].id + 1
+        let nuevoObjeto=Object.assign({id:idNuevo},producto,{image:nombreImagen})
+        productsDB.push(nuevoObjeto)
+		fs.writeFileSync(productsFilePath,JSON.stringify(productsDB,null,' '));
+		res.redirect('/products/create')
+        
     }
 }
 

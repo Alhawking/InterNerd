@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+
+            <h2>Editar Perfil</h2>
+            <% //if(locals.errors){ %>
+                <% //for (let oneError in errors) { %>
+                    <p><%//=errors[oneError].msg%></p>
+            <% //} %>
+          <% //} %> 
+            <section class="section">
+                <form class="section form" action="edit?_method=put" method="POST" >
+                   
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Email" value="<%=locals.oldData?oldData.email:null%>"/>
+                        <% if(locals.errors && errors.email) {%> 
+                            <p class="validationProfile"><%= errors.email.msg %></p> 
+                        <% } %> 
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena_Ant">Contraseña Anterior</label>
+                        <input type="password" name="contrasena_Ant" placeholder="Contraseña" value="<%=locals.oldData?oldData.contrasena_Ant:null%>"/>
+                        <% if(locals.errors && errors.contrasena_Ant) {%> 
+                            <p class="validationProfile"><%= errors.contrasena_Ant.msg %></p> 
+                        <% } %> 
+                    </div>
+                    <div class="campo">
+                        <label for="confirmacion">Nueva Contraseña:</label>
+                        <input type="password" name="confirmacion" placeholder="Confirmar" value="<%=locals.oldData?oldData.confirmacion:null%>"/>
+                        <% if(locals.errors && errors.confirmacion) {%> 
+                            <p class="validationProfile"><%= errors.confirmacion.msg %></p> 
+                        <% } %> 
+                    </div>
+                    <div class="campo">
+                        <label for="confirmacion2">Repetir Contraseña:</label>
+                        <input type="password" name="confirmacion2" placeholder="Confirmar" value="<%=locals.oldData?oldData.confirmacion2:null%>"/>
+                        <% if(locals.errors && errors.confirmacion2) {%> 
+                            <p class="validationProfile"><%= errors.confirmacion2.msg %></p>
+                        <% } %> 
+                    </div>
+                    
+                    <button type="submit" class="btn">Guardar</button>
+                    
+                   
+                </form>
+            </section>
+            <section class="section iconos">
+                <div>
+                    <img src="/public/img/Seguridad.svg" alt="ícono de seguridad">
+                    <p>Siéntete seguro de hacer tus compras</p>
+                </div>
+                <div>
+                    <img src="/public/img/Calidad.svg" alt="ícono de seguridad">
+                    <p>Productos de calidad siempreson recibidos</p>
+                </div>
+                <div>
+                    <img src="/public/img/Camion.svg" alt="ícono de seguridad">
+                    <p>Llegan hasta la puerta de tu casa</p>
+                </div>
+            </section>
+            <%- include('../partials/footer')%>
+
+                <script src="/public/js/app.js">
+                </script>
+    </body>
+
+</html>

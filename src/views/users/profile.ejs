@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>        
+                <div>
+                    <div class="info">
+                    </div>
+                    <div>
+                        <h1>Nombre de usuario <%= usuario.nombre%> <%= usuario.apellido%></h1>
+                            <h3>Email: <%= usuario.email%></h3>
+                            <h3>Dirección: <%= usuario.direccion%></h3>
+                            <h3>Teléfono: <%= usuario.telefono%></h3>
+                            <h3>Codigo Postal: <%= usuario.codigoPostal%></h3>
+                    </div>
+                
+
+
+            <%- include('../partials/footer')%>
+                <script src="/public/js/app.js">
+                </script>
+    </body>
+
+</html>

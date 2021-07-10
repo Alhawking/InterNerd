@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Francisco",
+    "apellido": "Espinola",
+    "email": "fran@gmail.com",
+    "contrasena": "123456",
+    "direccion" : "juramento 200",
+    "telefono"  :  "151246126",
+    "codigoPostal" : "1019"
+  },
+  {
+    "id": 2,
+    "nombre": "Agustin",
+    "apellido": "Rodriguez",
+    "email": "agustin@gmail.com",
+    "contrasena": "3333",
+    "direccion" : "cabildo 500",
+    "telefono"  :  "154861334",
+    "codigoPostal" : "1416"
+  },
+  {
+    "id": 3,
+    "nombre": "Matias",
+    "apellido": "Medica",
+    "email": "matias@gmail.com",
+    "contrasena": "1aaaaa",
+    "direccion" : "calle falsa 123",
+    "telefono"  :  "155452145",
+    "codigoPostal" : "1423"
+  },
+  {
+    "id": 4,
+    "nombre": "Alfredo",
+    "apellido": "Ledesma",
+    "email": "alf@gmail.com",
+    "contrasena": "322323dd",
+    "direccion" : "narnia 2525",
+    "telefono"  :  "15481515",
+    "codigoPostal" : "1426"
+  }
+]
