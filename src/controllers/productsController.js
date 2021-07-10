@@ -111,13 +111,13 @@ const productsController = {
         })
     },
     createPost:(req,res)=>{
-        console.log(req.file);
-        /*let producto=req.body
+        let nombreImagen=req.file.filename
+        let producto=req.body
         let idNuevo=productsDB[productsDB.length-1].id + 1
-        let nuevoObjeto=Object.assign({id:idNuevo},producto)
+        let nuevoObjeto=Object.assign({id:idNuevo},producto,{image:nombreImagen})
         productsDB.push(nuevoObjeto)
 		fs.writeFileSync(productsFilePath,JSON.stringify(productsDB,null,' '));
-		res.redirect('/products/create')*/
+		res.redirect('/products/create')
         
     }
 }
