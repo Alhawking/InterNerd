@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Funko Harry Potter con uniforme",
+    "description": "Funko de Harry Potter con uniforme de Hogwarts",
+    "stock": true,
+    "price": 300.00,
+    "especification":  { "Altura": 10.16, "Materiales": "PVC", "peso": 0.13 },
+    "image":"/public/img/HP-product.png",
+    "category": "hp",
+    "red": "coleccionable"
+  },
+  {
+    "id": 2,
+    "name": "Funko Harry Potter con uniforme",
+    "description": "Funko de Harry Potter con uniforme de Hogwarts",
+    "stock": true,
+    "price": 300.00,
+    "especification":  { "Altura": 10.16, "Materiales": "PVC", "peso": 0.13 },
+    "image":"/public/img/HP-product.png",
+    "category": "hp",
+    "red": "coleccionable"
+  },
+  {
+    "id": 3,
+    "name": "Funko Harry Potter con uniforme",
+    "description": "Funko de Harry Potter con uniforme de Hogwarts",
+    "stock": true,
+    "price": 300.00,
+    "especification":  { "Altura": 10.16, "Materiales": "PVC", "peso": 0.13 },
+    "image":"/public/img/HP-product.png",
+    "category": "hp",
+    "red": "coleccionable"
+  }
+]
