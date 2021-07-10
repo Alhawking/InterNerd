@@ -6,14 +6,14 @@
         <%- include('../partials/header')%>
             <h2>Crear producto</h2>
             <section class="section">
-                <form>
+                <form method="POST" action="create" enctype="multipart/form-data">
                     <div class="campo">
                         <label for="nombreProducto">Nombre de producto</label>
                         <input type="text" name="nombreProducto">
                     </div>
                     <div class="campo">
                         <label for="descripcion">Descripción</label>
-                        <textarea></textarea>
+                        <textarea name="descripcion"></textarea>
                     </div>
                     <div class="campo">
                         <label for="imagen">Imagen</label>
@@ -22,7 +22,7 @@
                     <div class="campo">
                         <label for="tipoRed">Red</label>
                         <select name="tipoRed">
-                            <option disabled selected>--Seleccionar--</option>
+                            <option dissabled selected>--Seleccionar--</option>
                             <% for(red of redes){%> 
                                 <option value="<%= red%>"><%=red%></option>
                                 <% } %> 
