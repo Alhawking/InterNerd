@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 
+
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const productsDB = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
@@ -110,12 +111,13 @@ const productsController = {
         })
     },
     createPost:(req,res)=>{
-        let producto=req.body
+        console.log(req.file);
+        /*let producto=req.body
         let idNuevo=productsDB[productsDB.length-1].id + 1
-        let nuevoObjeto=Object.assign({id:idNuevo},req.body)
+        let nuevoObjeto=Object.assign({id:idNuevo},producto)
         productsDB.push(nuevoObjeto)
 		fs.writeFileSync(productsFilePath,JSON.stringify(productsDB,null,' '));
-		res.redirect('/products/create')
+		res.redirect('/products/create')*/
         
     }
 }
