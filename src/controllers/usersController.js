@@ -8,6 +8,12 @@ const usersController = {
         res.render('users/signup', {
             pageTitle: 'Registrarse'
         })
+    },
+    profile: (req, res) => {
+        res.render('users/profile', {
+            pageTitle: 'Perfil',
+            id: req.params.id
+        })
     }
 }
 
