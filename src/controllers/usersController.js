@@ -36,8 +36,10 @@ const usersController = {
       return res.render("users/editUser", {
         errors: resultValidation.mapped(),
         pageTitle: "Editar",
-        oldData: req.body,
+        oldData: req.body
       });
+    }else{
+      return res.redirect("edit")
     }
   },
 };
