@@ -21,6 +21,20 @@
 ### Continuar haciendo
 - Llamadas por Discord y Telegram
 - Usar Jira como gestor del proyecto
+<<<<<<< HEAD
+### Más de...
+- Continuar con el flujo de trabajo
+- Continuar usando Git y desarrollar en la rama personal
+- organizar las carpetas del proyecto para que no haya conflictos
+- hacer las cosas con tiempo para no estar a las apuradas
+### Menos de...
+- Conectarse a destiempo
+- Dejar pasar los dailies o sesiones importantes
+
+### Hacer...
+-sacar la rama dev
+- Conectarse a tiempo en las sesiones
+=======
 - Continuar con el flujo de trabajo
 - Continuar usando Git y desarrollar en la rama personal
 - Usar la rama development para desarrollado
@@ -36,3 +50,4 @@
 ### Dejar de hacer
 - Sesiones de 5 minutos
 
+>>>>>>> 56401821cf7d436106d846aa2d2fc634e4586289

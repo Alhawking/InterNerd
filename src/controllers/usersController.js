@@ -8,6 +8,7 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 //----------------------------//
+
 const usersController = {
   login: (req, res) => {
     res.render("users/login", {
@@ -23,6 +24,7 @@ const usersController = {
     res.render("users/profile", {
       pageTitle: "Perfil",
       id: req.params.id,
+      usuario: users.find(x => x.id== req.params.id)
     });
   },
   edit: (req, res) => {
